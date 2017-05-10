@@ -1,0 +1,25 @@
+{
+  "name": "@traversedata/pagination.js",
+  "version": "1.0.0",
+  "description": "React pagination component",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TraverseData/Pagination.js.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "pagination",
+    "jsx"
+  ],
+  "author": "Traverse Data",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TraverseData/Pagination.js/issues"
+  },
+  "homepage": "https://github.com/TraverseData/Pagination.js#readme"
+}
