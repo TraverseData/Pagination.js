@@ -32,7 +32,7 @@ Determine the build to import based on which framework(s) you use:
 
 Include with a module bundler like [rollup] or [webpack]:
 
-```
+```js
 // using ES6 modules
 import Pagination from '@traverse-data/pagination/react/Pagination'
 
@@ -48,7 +48,7 @@ At the lowest level, each DOM element is specified by functions passed as props 
 
 If the current page (`<item active />`) should be rendered differently, a second parameter `active` is passed to the `item()` function.
 
-```
+```js
 import Pagination from '@traverse-data/pagination/react/Pagination'
 
 <Pagination
@@ -90,7 +90,7 @@ __Props:__
 
 If you're using [Reactstrap], there's already a nice [Pagination] component. Pagination plays nicely with it. URLs still have to be generated though.
 
-```
+```js
 import Pagination from '@traverse-data/pagination/react/PaginationReactstrap'
 
 <Pagination
@@ -112,7 +112,7 @@ __Props:__
 
 If you're using [Reactstrap] AND [React Router v4], Pagination also plays nicely by automatically creating `<Link />`'s, which update the `page=` URL query parameter. Existing query parameters are respected.
 
-```
+```js
 import Pagination from '@traverse-data/pagination/react/PaginationReactstrap'
 
 <Pagination
