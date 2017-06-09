@@ -1,4 +1,8 @@
 
+<p align="center">
+<img alt="Pagination" title="Pagination" src="http://i.imgur.com/pGpCZTh.png">
+</p>
+
 # Pagination.js
 
 > JSX component for pagination, compatible with [React], [Preact] or [vhtml].
