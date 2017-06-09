@@ -3,7 +3,7 @@
 <img alt="Pagination" title="Pagination" src="http://i.imgur.com/pGpCZTh.png">
 </p>
 
-# Pagination.js
+# Pagination
 
 > JSX component for pagination, compatible with [React], [Preact] or [vhtml].
 
