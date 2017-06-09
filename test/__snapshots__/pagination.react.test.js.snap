@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1st page, 10 total, 10 per page 1`] = `null`;
+
+exports[`1st page, 100 total, 10 per page 1`] = `
+<ul>
+  <li>
+    1
+  </li>
+  <li>
+    <a
+      href={2}
+    >
+      2
+    </a>
+  </li>
+  <li>
+    <a
+      href={3}
+    >
+      3
+    </a>
+  </li>
+  <li>
+    ...
+  </li>
+  <li>
+    <a
+      href={10}
+    >
+      10
+    </a>
+  </li>
+  <li>
+    <a
+      href={2}
+    >
+      Next
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`3rd page, 45 total, 10 per page 1`] = `
+<ul>
+  <li>
+    <a
+      href={2}
+    >
+      Previous
+    </a>
+  </li>
+  <li>
+    <a
+      href={1}
+    >
+      1
+    </a>
+  </li>
+  <li>
+    <a
+      href={2}
+    >
+      2
+    </a>
+  </li>
+  <li>
+    3
+  </li>
+  <li>
+    <a
+      href={4}
+    >
+      4
+    </a>
+  </li>
+  <li>
+    <a
+      href={5}
+    >
+      5
+    </a>
+  </li>
+  <li>
+    <a
+      href={4}
+    >
+      Next
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`10th page, 100 total, 10 per page 1`] = `
+<ul>
+  <li>
+    <a
+      href={9}
+    >
+      Previous
+    </a>
+  </li>
+  <li>
+    <a
+      href={1}
+    >
+      1
+    </a>
+  </li>
+  <li>
+    ...
+  </li>
+  <li>
+    <a
+      href={8}
+    >
+      8
+    </a>
+  </li>
+  <li>
+    <a
+      href={9}
+    >
+      9
+    </a>
+  </li>
+  <li>
+    10
+  </li>
+</ul>
+`;
+
+exports[`10th page, 200 total, 10 per page 1`] = `
+<ul>
+  <li>
+    <a
+      href={9}
+    >
+      Previous
+    </a>
+  </li>
+  <li>
+    <a
+      href={1}
+    >
+      1
+    </a>
+  </li>
+  <li>
+    ...
+  </li>
+  <li>
+    <a
+      href={8}
+    >
+      8
+    </a>
+  </li>
+  <li>
+    <a
+      href={9}
+    >
+      9
+    </a>
+  </li>
+  <li>
+    10
+  </li>
+  <li>
+    <a
+      href={11}
+    >
+      11
+    </a>
+  </li>
+  <li>
+    <a
+      href={12}
+    >
+      12
+    </a>
+  </li>
+  <li>
+    ...
+  </li>
+  <li>
+    <a
+      href={20}
+    >
+      20
+    </a>
+  </li>
+  <li>
+    <a
+      href={11}
+    >
+      Next
+    </a>
+  </li>
+</ul>
+`;
