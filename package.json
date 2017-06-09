@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "npm run build && npm run lint && jest",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublish": "npm run build",
+    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
