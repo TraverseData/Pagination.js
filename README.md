@@ -76,15 +76,15 @@ import Pagination from '@traverse-data/pagination/react/Pagination'
 ```
 
 __Props:__
- - _page_: Number. Current page.
- - _perPage_: Number. How many items are paginated per page.
- - _count_: Number. Total count of items (determines the last page).
- - _context_: Number. How many pages to show on both sides of the current page.
- - _previous_: Function. Component for the Previous button.
- - _next_: Function => Component for the Next button.
- - _item_: Function => Component for each Page button.
- - _spacer_: Function => Component for each contracted space.
- - _wrapper_: Function => Component to wrap all children in.
+ - `page`: _Number_. Current page.
+ - `perPage`: _Number_. How many items are paginated per page.
+ - `count`: _Number_. Total count of items (determines the last page).
+ - `context`: _Number_. How many pages to show on both sides of the current page.
+ - `previous`: _Function_. Component for the Previous button.
+ - `next`: _Function_ => Component for the Next button.
+ - `item`: _Function_ => Component for each Page button.
+ - `spacer`: _Function_ => Component for each contracted space.
+ - `wrapper`: _Function_ => Component to wrap all children in.
 
 #### Reactstrap
 
@@ -102,11 +102,11 @@ import Pagination from '@traverse-data/pagination/react/PaginationReactstrap'
 ```
 
 __Props:__
- - _page_: Number. Current page.
- - _perPage_: Number. How many items are paginated per page.
- - _count_: Number. Total count of items (determines the last page).
- - _context_: Number. Default: 2. How many pages to show on both sides of the current page.
- - _href_: Function => String to use for the href of each element.
+ - `page`: _Number_. Current page.
+ - `perPage`: _Number_. How many items are paginated per page.
+ - `count`: _Number_. Total count of items (determines the last page).
+ - `context`: _Number_. Default: 2. How many pages to show on both sides of the current page.
+ - `href`: _Function_ => String to use for the href of each element.
 
 #### React Router v4
 
@@ -123,10 +123,10 @@ import Pagination from '@traverse-data/pagination/react/PaginationReactstrap'
 ```
 
 __Props:__
- - _page_: Number. Current page.
- - _perPage_: Number. How many items are paginated per page.
- - _count_: Number. Total count of items (determines the last page).
- - _context_: Number. Default: 2. How many pages to show on both sides of the current page.
+ - `page`: _Number_. Current page.
+ - `perPage`: _Number_. How many items are paginated per page.
+ - `count`: _Number_. Total count of items (determines the last page).
+ - `context`: _Number_. Default: 2. How many pages to show on both sides of the current page.
 
 ## License
 
