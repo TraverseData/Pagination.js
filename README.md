@@ -119,7 +119,7 @@ __Props:__
 If you're using [Reactstrap] AND [React Router v4], Pagination also plays nicely by automatically creating `<Link />`'s, which update the `page=` URL query parameter. Existing query parameters are respected.
 
 ```js
-import Pagination from '@traverse-data/pagination/react/PaginationReactstrap'
+import Pagination from '@traverse-data/pagination/react/PaginationReactRouter'
 
 <Pagination
     page={6}
