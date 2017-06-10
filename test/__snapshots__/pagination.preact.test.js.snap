@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1st page, 10 total, 10 per page 1`] = `null`;
+exports[`preact/Pagination 1st page, 10 total, 10 per page 1`] = `null`;
 
-exports[`1st page, 100 total, 10 per page 1`] = `
+exports[`preact/Pagination 1st page, 100 total, 10 per page 1`] = `
 <ul>
   <li>
     1
@@ -41,7 +41,7 @@ exports[`1st page, 100 total, 10 per page 1`] = `
 </ul>
 `;
 
-exports[`3rd page, 45 total, 10 per page 1`] = `
+exports[`preact/Pagination 3rd page, 45 total, 10 per page 1`] = `
 <ul>
   <li>
     <a
@@ -91,7 +91,7 @@ exports[`3rd page, 45 total, 10 per page 1`] = `
 </ul>
 `;
 
-exports[`10th page, 100 total, 10 per page 1`] = `
+exports[`preact/Pagination 10th page, 100 total, 10 per page 1`] = `
 <ul>
   <li>
     <a
@@ -130,7 +130,7 @@ exports[`10th page, 100 total, 10 per page 1`] = `
 </ul>
 `;
 
-exports[`10th page, 200 total, 10 per page 1`] = `
+exports[`preact/Pagination 10th page, 200 total, 10 per page 1`] = `
 <ul>
   <li>
     <a

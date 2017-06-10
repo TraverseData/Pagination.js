@@ -1,6 +1,10 @@
 
 // ___JSX_IMPORT___
 
+import { omit } from './util'
+
+const DEFAULT_CONTEXT = 2  // number of pages to show before and after current page.
+
 const pagination = (page, last, context) => {
     const left = page - context
     const right = page + context + 1
@@ -37,21 +41,49 @@ const pagination = (page, last, context) => {
     return rangeWithSpacers
 }
 
-export default props => {
-    const last = Math.ceil(props.count / props.perPage)
-    const pages = pagination(props.page, last, props.context)
+const Pagination = props => {
+    const {
+        page,
+        perPage,
+        count,
+        context,
+        previous,
+        next,
+        item,
+        spacer,
+    } = props
+    const rest = omit(props, [
+        'page',
+        'perPage',
+        'count',
+        'context',
+        'previous',
+        'next',
+        'item',
+        'spacer',
+        'wrapper',
+        'children',
+    ])
+    const last = Math.ceil(count / perPage)
+    const pages = pagination(page, last, context)
 
     return pages.length ? (
-        <props.wrapper>
-            {(props.page !== 1) && props.previous(props.page)}
-            {pages.map(page => (
-                (typeof page === 'number') ? (
-                    props.item(page, page === props.page)
+        <props.wrapper {...rest}>
+            {(page !== 1) && previous(page - 1)}
+            {pages.map(_page => (
+                (typeof _page === 'number') ? (
+                    item(_page, _page === page)
                 ) : (
-                    props.spacer(page)
+                    spacer(_page)
                 )
             ))}
-            {(props.page !== last) && props.next(props.page)}
+            {(page !== last) && next(page + 1)}
         </props.wrapper>
     ) : null
 }
+
+Pagination.defaultProps = {
+    context: DEFAULT_CONTEXT,
+}
+
+export default Pagination

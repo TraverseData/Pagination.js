@@ -7,58 +7,56 @@ import {
 } from 'reactstrap' // eslint-disable-line
 
 import BasicPagination from './index'
+import { omit } from './util'
 
 const SPACER = '...'
 const DEFAULT_CONTEXT = 2  // number of pages to show before and after current page.
 
 const Pagination = props => {
-    const previous = page => (
+    const previous = _page => (
         <PaginationItem key="previous">
             <PaginationLink
                 role="button"
-                href={props.href(page - 1)}
+                href={props.href(_page)}
                 onClick={props.onClick}
             >Previous</PaginationLink>
         </PaginationItem>
     )
 
-    const next = page => (
+    const next = _page => (
         <PaginationItem key="next">
             <PaginationLink
                 role="button"
-                href={props.href(page + 1)}
+                href={props.href(_page)}
                 onClick={props.onClick}
             >Next</PaginationLink>
         </PaginationItem>
     )
 
-    const spacer = page => (
-        <PaginationItem key={page}>
+    const spacer = _page => (
+        <PaginationItem key={_page}>
             <PaginationLink>{SPACER}</PaginationLink>
         </PaginationItem>
     )
 
-    const item = (page, active) => (
-        <PaginationItem active={active} key={page}>
+    const item = (_page, active) => (
+        <PaginationItem active={active} key={_page}>
             <PaginationLink
                 role="button"
-                href={props.href(page)}
+                href={props.href(_page)}
                 onClick={props.onClick}
-            >{page}</PaginationLink>
+            >{_page}</PaginationLink>
         </PaginationItem>
     )
 
     return (
         <BasicPagination
-            page={props.page}
-            count={props.count}
-            perPage={props.perPage}
-            context={props.context}
             previous={previous}
-            wrapper={BootstrapPagination}
-            item={item}
             next={next}
+            item={item}
             spacer={spacer}
+            wrapper={BootstrapPagination}
+            {...omit(props, ['href', 'onClick'])}
         />
     )
 }

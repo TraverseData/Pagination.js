@@ -34,12 +34,9 @@ const Pagination = (props, context) => {
 
     return (
         <ReactstrapPagination
-            page={props.page}
-            count={props.count}
-            perPage={props.perPage}
-            context={props.context}
             href={page => combineQuery(query, { page })}
             onClick={onClick}
+            {...props}
         />
     )
 }
@@ -57,13 +54,6 @@ Pagination.contextTypes = {
 
 Pagination.defaultProps = {
     context: DEFAULT_CONTEXT,
-}
-
-Pagination.propTypes = {
-    page: PropTypes.number.isRequired,
-    count: PropTypes.number.isRequired,
-    perPage: PropTypes.number.isRequired,
-    context: PropTypes.number,
 }
 
 export default Pagination

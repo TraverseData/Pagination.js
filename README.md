@@ -92,7 +92,9 @@ __Props:__
 
 #### Reactstrap
 
-If you're using [Reactstrap], there's already a nice [Pagination] component. Pagination plays nicely with it. URLs still have to be generated though.
+If you're using [Reactstrap], there's already a nice [Pagination] component. Pagination plays nicely with it. URLs still have to be generated though with the `href()` function, which receives a page number and returns a string.
+
+Additional props are passed through, so `className`, `size`, `tag`, etc. are supported.
 
 ```js
 import Pagination from '@traverse-data/pagination/react/PaginationReactstrap'

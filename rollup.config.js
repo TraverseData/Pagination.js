@@ -15,7 +15,9 @@ export default [Object.assign({}, common, {
     dest: 'react/Pagination.js',
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import React from 'react'" }),
-        buble(),
+        buble({
+            objectAssign: 'Object.assign',
+        }),
     ],
     external: ['react', 'prop-types'],
     globals: {
@@ -27,7 +29,9 @@ export default [Object.assign({}, common, {
     dest: 'react/PaginationReactstrap.js',
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import React from 'react'" }),
-        buble(),
+        buble({
+            objectAssign: 'Object.assign',
+        }),
     ],
     external: ['react', 'prop-types', 'reactstrap'],
     globals: {
@@ -55,7 +59,10 @@ export default [Object.assign({}, common, {
     dest: 'preact/Pagination.js',
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import { h } from 'preact'" }),
-        buble({ jsx: 'h' }),
+        buble({
+            jsx: 'h',
+            objectAssign: 'Object.assign',
+        }),
     ],
     external: ['preact'],
     globals: { preact: 'preact' },
@@ -63,7 +70,10 @@ export default [Object.assign({}, common, {
     dest: 'vhtml/Pagination.js',
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import h from 'vhtml'" }),
-        buble({ jsx: 'h' }),
+        buble({
+            jsx: 'h',
+            objectAssign: 'Object.assign',
+        }),
     ],
     external: ['vhtml'],
     globals: { vhtml: 'h' },

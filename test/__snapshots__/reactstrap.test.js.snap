@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1st page, 10 total, 10 per page 1`] = `null`;
+exports[`react/PaginationReactstrap 1st page, 10 total, 10 per page 1`] = `null`;
 
-exports[`1st page, 100 total, 10 per page 1`] = `
+exports[`react/PaginationReactstrap 1st page, 100 total, 10 per page 1`] = `
 <ul
   className="pagination"
 >
@@ -84,7 +84,7 @@ exports[`1st page, 100 total, 10 per page 1`] = `
 </ul>
 `;
 
-exports[`3rd page, 45 total, 10 per page 1`] = `
+exports[`react/PaginationReactstrap 3rd page, 45 total, 10 per page 1`] = `
 <ul
   className="pagination"
 >
@@ -182,7 +182,7 @@ exports[`3rd page, 45 total, 10 per page 1`] = `
 </ul>
 `;
 
-exports[`10th page, 100 total, 10 per page 1`] = `
+exports[`react/PaginationReactstrap 10th page, 100 total, 10 per page 1`] = `
 <ul
   className="pagination"
 >
@@ -264,7 +264,7 @@ exports[`10th page, 100 total, 10 per page 1`] = `
 </ul>
 `;
 
-exports[`10th page, 200 total, 10 per page 1`] = `
+exports[`react/PaginationReactstrap 10th page, 200 total, 10 per page 1`] = `
 <ul
   className="pagination"
 >
@@ -399,6 +399,88 @@ exports[`10th page, 200 total, 10 per page 1`] = `
       aria-label={undefined}
       className="page-link"
       href={11}
+      onClick={undefined}
+      role="button"
+    >
+      Next
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`react/PaginationReactstrap passes other props 1`] = `
+<ul
+  className="pagination pagination-lg"
+>
+  <li
+    className="page-item active"
+  >
+    <a
+      aria-label={undefined}
+      className="page-link"
+      href={1}
+      onClick={undefined}
+      role="button"
+    >
+      1
+    </a>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      aria-label={undefined}
+      className="page-link"
+      href={2}
+      onClick={undefined}
+      role="button"
+    >
+      2
+    </a>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      aria-label={undefined}
+      className="page-link"
+      href={3}
+      onClick={undefined}
+      role="button"
+    >
+      3
+    </a>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      aria-label={undefined}
+      className="page-link"
+    >
+      ...
+    </a>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      aria-label={undefined}
+      className="page-link"
+      href={10}
+      onClick={undefined}
+      role="button"
+    >
+      10
+    </a>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      aria-label={undefined}
+      className="page-link"
+      href={2}
       onClick={undefined}
       role="button"
     >
