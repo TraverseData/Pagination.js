@@ -1,6 +1,6 @@
 {
   "name": "@traverse-data/pagination",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JSX component for pagination, compatible with React, Preact or vhtml",
   "main": "react/Pagination.js",
   "module": "react/Pagination.es.js",
