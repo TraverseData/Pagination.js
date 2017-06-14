@@ -7,12 +7,14 @@ const common = {
     entry: 'index.js',
     sourceMap: true,
     interop: false,
-    format: 'umd',
     exports: 'default',
 }
 
 export default [Object.assign({}, common, {
-    dest: 'react/Pagination.js',
+    targets: [
+        { dest: 'react/Pagination.es.js', format: 'es' },
+        { dest: 'react/Pagination.js', format: 'umd' },
+    ],
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import React from 'react'" }),
         buble({
@@ -26,7 +28,10 @@ export default [Object.assign({}, common, {
     },
 }), Object.assign({}, common, {
     entry: 'reactstrap.js',
-    dest: 'react/PaginationReactstrap.js',
+    targets: [
+        { dest: 'react/PaginationReactstrap.es.js', format: 'es' },
+        { dest: 'react/PaginationReactstrap.js', format: 'umd' },
+    ],
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import React from 'react'" }),
         buble({
@@ -41,7 +46,10 @@ export default [Object.assign({}, common, {
     },
 }), Object.assign({}, common, {
     entry: 'reactrouter.js',
-    dest: 'react/PaginationReactRouter.js',
+    targets: [
+        { dest: 'react/PaginationReactRouter.es.js', format: 'es' },
+        { dest: 'react/PaginationReactRouter.js', format: 'umd' },
+    ],
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import React from 'react'" }),
         buble({
@@ -56,7 +64,10 @@ export default [Object.assign({}, common, {
         'qs': 'qs',
     },
 }), Object.assign({}, common, {
-    dest: 'preact/Pagination.js',
+    targets: [
+        { dest: 'preact/Pagination.es.js', format: 'es' },
+        { dest: 'preact/Pagination.js', format: 'umd' },
+    ],
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import { h } from 'preact'" }),
         buble({
@@ -67,7 +78,10 @@ export default [Object.assign({}, common, {
     external: ['preact'],
     globals: { preact: 'preact' },
 }), Object.assign({}, common, {
-    dest: 'vhtml/Pagination.js',
+    targets: [
+        { dest: 'vhtml/Pagination.es.js', format: 'es' },
+        { dest: 'vhtml/Pagination.js', format: 'umd' },
+    ],
     plugins: [
         replace({ '// ___JSX_IMPORT___': "import h from 'vhtml'" }),
         buble({

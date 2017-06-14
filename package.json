@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "JSX component for pagination, compatible with React, Preact or vhtml",
   "main": "react/Pagination.js",
+  "module": "react/Pagination.es.js",
   "scripts": {
     "lint": "eslint .",
     "test": "npm run build && npm run lint && jest",
