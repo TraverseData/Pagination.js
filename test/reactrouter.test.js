@@ -24,6 +24,26 @@ describe('react/PaginationReactRouter', () => {
         expect(spy).toBe('?page=2')
     })
 
+    test('Sets page query param with pageParamId if given', () => {
+        let spy = ''
+
+        const context = { router: { history: { push: url => { spy = url } } } }
+        const component = mount(
+            <Pagination
+                page={1}
+                count={100}
+                perPage={10}
+                pageParamId={'testId'}
+            />, { context })
+
+        component
+            .find('a')
+            .at(1)
+            .simulate('click')
+        expect(spy).toBe('?pagetestId=2')
+    })
+
+
     test('Respects existing query parameters', () => {
         let spy = ''
 

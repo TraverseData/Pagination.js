@@ -55,6 +55,7 @@ const Pagination = props => {
     const rest = omit(props, [
         'page',
         'perPage',
+        'pageParamId',
         'count',
         'context',
         'previous',

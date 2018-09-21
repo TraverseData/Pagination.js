@@ -20,6 +20,10 @@ const combineQuery = (current, replace) =>
 
 
 const Pagination = (props, context) => {
+    let pageParam = 'page'
+    if (props.pageParamId) {
+        pageParam = `${pageParam}${props.pageParamId}`
+    }
     const query = (
         context.router &&
         context.router.history.location
@@ -34,7 +38,7 @@ const Pagination = (props, context) => {
 
     return (
         <ReactstrapPagination
-            href={page => combineQuery(query, { page })}
+            href={page => combineQuery(query, { [pageParam]: page })}
             onClick={onClick}
             {...props}
         />
